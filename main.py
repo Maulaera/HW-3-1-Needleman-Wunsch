@@ -17,3 +17,10 @@ def needleman_wunsch(seq1, seq2, match_score,mismatch_score,gap_pen):
 # Fill the matrix completely
     for i in range(1, n+1):
         for j in range(1, m+1):
+            match = dp[i-1][j-1] + (match_score if seq1[i-1] ==
+                                    seq2[j-1] else mismatch_score)
+            delete = dp[i-1][j] + gap_pen
+            insert = dp[i][j-1] + gap_pen
+            dp[i][j] = max(match,delete,insert)
+
+# Find optimal alignment
