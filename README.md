@@ -8,3 +8,14 @@ The program will take two sequences to be aligned as input. You may use a simple
 Submission:
 
 Please submit your source code and a brief report that includes the instruction how to compile and run the program. It should also contain information how to locate/interpret your results.
+
+Running Instructions:
+
+To run this code for yourself, all you need to do is to download the main.py file and run it in any IDE. The code will ask for an input and will output your results. For the sake of the assignment, I have coded the algorithm to write the output into a seperate file.
+
+Sample Input:
+- Enter first sequence: PRKVV
+- Enter second sequence: DPLVR
+- Enter match score: 1
+- Enter mismatch score: 1
+- Enter gap penalty: -2

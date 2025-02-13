@@ -1,0 +1,5 @@
+
+Optimal Alignment Score: 5
+Aligned Sequences:
+PRKVV
+DPLVR

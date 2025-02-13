@@ -45,8 +45,12 @@ def needleman_wunsch(seq1, seq2, match_score,mismatch_score,gap_pen):
             j -= 1
 
 # Print results
-    print(f"\nOptimal Alignment Score: {dp[n][m]}")
-    print(f"Aligned Sequences:\n{aligned_seq1}\n{aligned_seq2}")
+    output = f"\nOptimal Alignment Score: {dp[n][m]}\nAligned Sequences:\n{aligned_seq1}\n{aligned_seq2}\n"
+    print(output)
+    
+    # Write results to a file
+    with open("needleman_wunsch_output.txt", "w") as file:
+        file.write(output)
 
 # User input
 seq1 = input("Enter the first sequence: ").upper()
