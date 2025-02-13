@@ -11,7 +11,7 @@ Please submit your source code and a brief report that includes the instruction 
 
 Running Instructions:
 
-To run this code for yourself, all you need to do is to download the main.py file and run it in any IDE. The code will ask for an input and will output your results. For the sake of the assignment, I have coded the algorithm to write the output into a seperate file.
+To run this code for yourself, all you need to do is to download the main.py file and run it in any IDE. The code will ask for an input and will output your results. For the sake of the assignment, I have coded the algorithm to write the output into a seperate file called needleman_wunsch_output.txt.
 
 Sample Input:
 - Enter first sequence: PRKVV
