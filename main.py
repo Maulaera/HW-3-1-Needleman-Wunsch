@@ -27,7 +27,7 @@ def needleman_wunsch(seq1, seq2, match_score,mismatch_score,gap_pen):
     aligned_seq1,aligned_seq2 = "",""
     i,j = n,m
 
-    while i > 0 or j < 0:
+    while i > 0 or j > 0:
         current_score = dp[i][j]
         if i > 0 and j > 0 and (current_score == dp[i-1][j-1] + 
                             (match_score if seq1[i-1] == seq2[j-1] else mismatch_score)):
@@ -49,10 +49,10 @@ def needleman_wunsch(seq1, seq2, match_score,mismatch_score,gap_pen):
     print(f"Aligned Sequences:\n{aligned_seq1}\n{aligned_seq2}")
 
 # User input
-    seq1 = input("Enter the first sequence: ").upper()
-    seq2 = input("Enter the second sequence: ").upper()
-    match_score = int(input("Enter match score: "))
-    mismatch_score = int(input("Enter mismatch score: "))
-    gap_pen = int(input("Enter gap penalty: "))
+seq1 = input("Enter the first sequence: ").upper()
+seq2 = input("Enter the second sequence: ").upper()
+match_score = int(input("Enter match score: "))
+mismatch_score = int(input("Enter mismatch score: "))
+gap_pen = int(input("Enter gap penalty: "))
 
-    needleman_wunsch(seq1,seq2,match_score,gap_pen)
+needleman_wunsch(seq1,seq2,match_score, mismatch_score,gap_pen)
